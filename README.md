@@ -1,30 +1,31 @@
-# Advanced Mathematics Library VB.NET
+# 📊 Advanced Mathematics Library VB.NET
 
-Sebuah library matematika komprehensif yang diimplementasikan dalam VB.NET, mencakup berbagai operasi matematika tingkat lanjut termasuk aljabar linear, kalkulus, dan statistik.
+A comprehensive mathematics library in VB.NET providing advanced operations such as linear algebra, calculus, and statistics to support your development needs.
 
-## 🌟 Fitur
+## 🌟 Key Features
 
-- **Operasi Matriks**
-  - Transpose
-  - Determinan (2x2)
-  - Manipulasi matriks dasar
+### 🔢 **Matrix Operations**
+- Matrix transpose
+- Determinant calculation (2x2)
+- Basic matrix manipulation
 
-- **Kalkulus**
-  - Turunan numerik
-  - Integrasi numerik (metode rectangular)
-  - Fungsi matematika dasar
+### 📐 **Calculus**
+- Numerical derivatives
+- Numerical integration (rectangular method)
+- Basic mathematical functions
 
-- **Statistik**
-  - Mean
-  - Variance
-  - Standard Deviation
+### 📊 **Statistics**
+- Mean calculation
+- Variance calculation
+- Standard deviation calculation
 
-- **Utilitas**
-  - Generator matriks acak
-  - Fungsi matematika dasar (factorial, power)
+### 🛠️ **Additional Utilities**
+- Random matrix generator
+- Basic math functions (factorial, power)
 
-## 📁 Struktur Proyek
+## 📂 Project Structure
 
+```plaintext
 Mathematics-VB/
 ├── src/
 │   ├── Core/
@@ -39,17 +40,20 @@ Mathematics-VB/
 │   └── TestRunner.vb
 └── Utils/
     └── MathHelper.vb
+```
 
-## 🚀 Cara Penggunaan
+## 🚀 How to Use
 
-### Inisialisasi Proyek
+### 1. Clone and Initialize the Project
+```bash
+git clone https://github.com/sazumivicky/Mathematics-VB.git
+```
+2. Open the solution in **Visual Studio**.
+3. Build and run the project.
 
-1. Clone repository ini
-2. Buka solusi di Visual Studio
-3. Build proyek
+### 💡 Example Usage
 
-### Contoh Penggunaan
-
+```vb
 ' Matrix Operations
 Dim matrix As New Matrix(2, 2)
 Dim transposed = matrix.Transpose()
@@ -63,64 +67,72 @@ Dim stats As New BasicStats()
 Dim data = New Double() {1, 2, 3, 4, 5}
 Dim mean = stats.Mean(data)
 Dim stdDev = stats.StandardDeviation(data)
+```
 
-## 📚 Dokumentasi
+## 📖 Class Documentation
 
-### Matrix Class
+### 🧮 **Matrix Class**
+- Create a new matrix:
+  ```vb
+  Dim matrix As New Matrix(rows, cols)
+  ```
+- Calculate determinant (2x2):
+  ```vb
+  Dim det = matrix.Determinant()
+  ```
+- Transpose a matrix:
+  ```vb
+  Dim transposed = matrix.Transpose()
+  ```
 
-' Membuat matriks baru
-Dim matrix As New Matrix(rows, cols)
+### 📉 **Derivative Class**
+- Calculate numerical derivative:
+  ```vb
+  Dim deriv As New Derivative()
+  Dim result = deriv.NumericalDerivative(Function(x) x * x, 2.0)
+  ```
+- Perform simple integration:
+  ```vb
+  Dim integral = deriv.SimpleIntegration(Function(x) x * x, 0, 1)
+  ```
 
-' Menghitung determinan (2x2)
-Dim det = matrix.Determinant()
+### 📊 **BasicStats Class**
+- Basic statistical operations:
+  ```vb
+  Dim stats As New BasicStats()
+  Dim mean = stats.Mean(data)
+  Dim variance = stats.Variance(data)
+  Dim stdDev = stats.StandardDeviation(data)
+  ```
 
-' Melakukan transpose
-Dim transposed = matrix.Transpose()
-
-### Derivative Class
-
-' Menghitung turunan numerik
-Dim deriv As New Derivative()
-Dim result = deriv.NumericalDerivative(Function(x) x * x, 2.0)
-
-' Menghitung integral
-Dim integral = deriv.SimpleIntegration(Function(x) x * x, 0, 1)
-
-### BasicStats Class
-
-' Operasi statistik dasar
-Dim stats As New BasicStats()
-Dim mean = stats.Mean(data)
-Dim variance = stats.Variance(data)
-Dim stdDev = stats.StandardDeviation(data)
-
-## 🛠️ Teknologi yang Digunakan
+## 🛠️ Technologies Used
 
 - Visual Basic .NET
 - .NET Framework
 - Visual Studio IDE
 
-## 📋 Persyaratan Sistem
+## 💻 System Requirements
 
-- .NET Framework 4.5 atau lebih tinggi
-- Visual Studio 2017 atau lebih tinggi
+- **.NET Framework 4.5** or higher
+- **Visual Studio 2017** or later
 
-## 🤝 Kontribusi
+## 🤝 Contribution
 
-Kontribusi selalu diterima! Silakan ikuti langkah-langkah berikut:
+We welcome contributions! Follow these steps to contribute:
 
-1. Fork proyek ini
-2. Buat branch fitur baru (`git checkout -b feature/example`)
-3. Commit perubahan (`git commit -m 'Add some example'`)
-4. Push ke branch (`git push origin feature/example`)
-5. Buat Pull Request
+1. **Fork** this repository.
+2. Create a new feature branch (`git checkout -b feature/new-feature`).
+3. Commit your changes (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature/new-feature`).
+5. Open a **Pull Request**.
 
-## 📝 Lisensi
+## 📝 License
 
-Didistribusikan di bawah Lisensi MIT. Lihat `LICENSE` untuk informasi lebih lanjut.
+Distributed under the **MIT License**. See the `LICENSE` file for more details.
 
-## 📧 Kontak
+## 📧 Contact
 
-Sazumi Viki - root@sazumi.moe
+**Sazumi Viki**  
+✉️ Email: [root@sazumi.moe](mailto:root@sazumi.moe)
 
-Link Proyek: [https://github.com/sazumivicky/Mathematics-VB](https://github.com/sazumivicky/Mathematics-VB)
+🔗 Project Link: [Mathematics-VB on GitHub](https://github.com/sazumivicky/Mathematics-VB)
